@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    padding: 50px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 40px;
+}
+.gallery img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.5);
+    transition: 0.3s ease;
+    filter: grayscale(100%);
+}
+.gallery img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
